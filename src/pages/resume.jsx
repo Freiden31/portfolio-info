@@ -59,7 +59,7 @@ function App(){
                         </div>
                          <hr className="h-[2px] w-full bg-black mb-3"/>
                          <div className="flex items-center gap-2">
-                            <p className="sm:text-[14px] text-[11px] text-justify sm:text-left"><b>Technologies:</b> Python, Django Framework, Rest API, ReactJS Framework, MYSQL, Machine Learning (Supervised), Scikit-learn, Digital Ocean, Google Cloud Platform, Railway, Heroku, Vercel, and Linux</p>
+                            <p className="sm:text-[14px] text-[11px] text-justify sm:text-left"><b>Technologies:</b> Python, Django Framework, Rest API, ReactJS Framework, MYSQL, Machine Learning (Supervised), Scikit-learn, Digital Ocean, Google Cloud Platform, Railway, Heroku, Vercel, Obsidian, and Linux</p>
                          </div>
                     </div>
                     
@@ -70,13 +70,13 @@ function App(){
                         <hr className="h-[2px] w-full bg-black mb-3"/>
                         <div className="flex-row justify-between items-center">
                             <div className="flex items-center">
-                                <p className="sm:text-[14px] text-[11px] italic">Commission, Reseacrh, and Development</p>
+                                <p className="sm:text-[14px] text-[11px] italic">Commission, Research, and Development</p>
                             </div>
                             <div className="flex-row mt-2">
                                 <ul className="sm:text-[14px] text-[11px] list-disc pl-8">
-                                    <li>Desian</li>
-                                    <li>Desian</li>
-                                    <li>Desian</li>
+                                    <li>Designed and developed a machine-learning–based anomaly detection system, including research, data analysis, model implementation, 
+                                        and evaluation of network traffic irregularities
+                                    </li>
                                 </ul>
                             </div>
                         </div>
