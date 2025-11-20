@@ -55,11 +55,23 @@ function App(){
 
                     <div className="flex-row items-center mb-5">
                         <div className="flex items-center">
-                            <p className="text-[14px]tracking-[0.1em] font-bold">SKILLS</p>
+                            <p className="text-[14px] tracking-[0.1em] font-bold">TECHNICAL SKILLS</p>
                         </div>
                          <hr className="h-[2px] w-full bg-black mb-3"/>
                          <div className="flex items-center gap-2">
-                            <p className="sm:text-[14px] text-[11px] text-justify sm:text-left"><b>Technologies:</b> Python, Django Framework, Rest API, ReactJS Framework, MYSQL, Machine Learning (Supervised), Scikit-learn, Digital Ocean, Google Cloud Platform, Railway, Heroku, Vercel, Obsidian, and Linux</p>
+                            <p className="sm:text-[14px] text-[11px] text-justify sm:text-left"><b>Lnaguage:</b> Python, SQL, HTML, CSS</p>
+                         </div>
+                         <div className="flex items-center gap-2">
+                            <p className="sm:text-[14px] text-[11px] text-justify sm:text-left"><b>Frameworks:</b> Django, ReactJs, Tailwindcss, Scikit-Learn</p>
+                         </div>
+                         <div className="flex items-center gap-2">
+                            <p className="sm:text-[14px] text-[11px] text-justify sm:text-left"><b>Database:</b> MySql</p>
+                         </div>
+                         <div className="flex items-center gap-2">
+                            <p className="sm:text-[14px] text-[11px] text-justify sm:text-left"><b>API:</b> REST APIs</p>
+                         </div>
+                         <div className="flex items-center gap-2">
+                            <p className="sm:text-[14px] text-[11px] text-justify sm:text-left"><b>Tools and Platforms:</b> Git, Github, Google Cloud Platform, Vercel, Digital Ocean, Railway, Heroku, Postman, Obsidian, Linux</p>
                          </div>
                     </div>
                     
@@ -69,14 +81,27 @@ function App(){
                         </div>
                         <hr className="h-[2px] w-full bg-black mb-3"/>
                         <div className="flex-row justify-between items-center">
-                            <div className="flex items-center">
-                                <p className="sm:text-[14px] text-[11px] italic">Commission, Research, and Development</p>
+                            <div className="flex-row items-center">
+                                <p className="sm:text-[14px] text-[11px] italic">Research and Development</p>
+                                <p className="sm-text-[14px] text-[11px] italic">[March 2025 to September 2026]</p>
                             </div>
                             <div className="flex-row mt-2">
                                 <ul className="sm:text-[14px] text-[11px] list-disc pl-8">
-                                    <li>Designed and developed a machine-learning–based anomaly detection system, including research, data analysis, model implementation, 
-                                        and evaluation of network traffic irregularities
-                                    </li>
+                                    <li>Designed and developed a machine-learning–based anomaly detection system to detect network traffic irregulatories.</li>
+                                    <li>Conducted research, data analysis, and model implementation using Python and Scikit-learn.</li>
+                                    <li>Built a full-stack web interface using Django (backend) and ReacjtJS (frontend)</li>
+                                    <li>Deployed the application on Heroku and Vercel, ensuring cloud-based accessibility and scalability.</li>
+                                </ul>
+                            </div>
+                            <div className="flex-row items-center mt-5">
+                                <p className="sm:text-[14px] text-[11px] italic">Web Development Intern</p>
+                                <p className="sm:text-[14px] text-[11px] italic">[Ewan ko ba]</p>
+                            </div>
+                            <div className="flex-row mt-2">
+                                <ul className="sm:text-[14px] text-[11px] list-disc pl-8">
+                                    <li>Next sem na to</li>
+                                    <li>kinakabahan sa defense</li>
+                                    <li>awan kwarta min anya mittin</li>
                                 </ul>
                             </div>
                         </div>
