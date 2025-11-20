@@ -21,7 +21,7 @@ function Home() {
                     <p className="text-[12px] text-justify sm:text-sm/6">I'm a fourth year Information Technology student in Isabela State University. 
                     Exploring technologies for web development for both frontend and backend. Creating web application for innovative works such management system.</p>
                 </div>
-                <div className="flex flex-col items-center justify-center gap-2 mt-[2rem]">
+                <div className="flex flex-col items-center justify-center gap-2 mt-[2rem] hidden sm:flex">
                     <div className="h-8 w-[15.5rem] text-[14px] sm:text-[16px] sm:w-[15rem] p-5 bg-[#02366dff] flex items-center justify-center rounded-tl-[15px] rounded-br-[15px]"><a href="#" className="text-white">LINKEDIN</a></div>
                     <div className="h-8 w-[15.5rem] text-[14px] sm:text-[16px] sm:w-[15rem] p-5 bg-[#02366dff] flex items-center justify-center rounded-tl-[15px] rounded-br-[15px]"><a href="#" className="text-white">PROJECTS</a></div>
                     <div className="h-8 w-[15.5rem] text-[14px] sm:text-[16px] sm:w-[15rem] p-5 bg-[#02366dff] flex items-center justify-center rounded-tl-[15px] rounded-br-[15px]"><a href="#" className="text-white">HOME</a></div>

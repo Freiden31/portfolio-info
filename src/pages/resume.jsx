@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
 import image1 from "../assets/profile.jpeg"
+import html2pdf from "html2pdf.js";
 
 function App(){
+    const resumeRef = useRef();
+
+    const handleDownload = () => {
+        const element = resumeRef.current;
+
+        const opt = {
+            margin: 5,
+            filename: "Freiden_Duliente_Resume.pdf",
+            image: { type: "jpeg", quality: 1},
+            html2canvas: {
+                scale: 4,
+                useCORS: true,
+            },
+            jsPDF: {
+                unit: "mm",
+                format: "a4",
+                orientation: 'portrait'
+            },
+        };
+
+        html2pdf().set(opt).from(element).save();
+    }
+
     return (
-        <div className="w-full h-screen flex-row items-center justify-center sm:px-[20rem] font-mono gap-5 overflow-x-hidden">
+        <div className="w-full min-h-screen flex-row items-center justify-center sm:px-[20rem] font-mono gap-5 overflow-x-hidden">
             <div className="flex-row justify-center text-center mb-5 hidden sm:block">
                 <h2 className="text-[40px] font-bold">Resume.</h2>
                 <div className="w-full flex items-center justify-center mt-5 sm:mt-6">
@@ -15,7 +39,7 @@ function App(){
 
             <div className="flex justify-center grid grid-cols-none sm:grid-cols-3 gap-9 ">
                 {/*information */}
-                <div className="flex-row justify-between gap-5 sm:col-span-2 w-auto sm:w-full">
+                <div ref={resumeRef} className="flex-row justify-between gap-5 sm:col-span-2 w-auto sm:w-full">
                     <div className="flex-row justify-center items-center gap-[3rem] mt-8 mb-8">
                         <div className="flex items-center justify-center">
                             <h4 className="text-[20px] sm:text-[25px]">Freiden Duliente</h4>
@@ -38,8 +62,8 @@ function App(){
                                 <div className="flex items-center">
                                     <p className="sm:text-[14px] text-[11px]  font-bold text-justify sm:text-left">Isabela State University, College of Engineering, Architecture, and Technology</p>
                                 </div>
-                                <div className="flex ">
-                                    <p className="sm:text-[14px] text-[10px]  font-bold text-right sm:text-left">Ilagan Campus</p>
+                                <div className="flex">
+                                    <p className="sm:text-[14px] text-[10px]  font-bold text-right sm:text-left mb-5">Ilagan Campus</p>
                                 </div>
                             </div>
                             <div className="flex justify-between items-center">
@@ -107,6 +131,9 @@ function App(){
                         </div>
                     </div>
                 </div>
+                <div className="flex flex-col items-center justify-center gap-2 mt-[2rem] sm:hidden block" >
+                        <div onClick={handleDownload} className="h-8 w-full text-[14px] sm:text-[16px] sm:w-[15rem] p-5 bg-[#02366dff] flex items-center justify-center hover:font-bold hover:bg-[#136bc9ff]"><a href="#" className="text-white">DOWNLOAD RESUME</a></div>
+                    </div>
 
                 {/* images */}
                 <div className="flex-row sm:cols-span-1 py-8 gap-5">
